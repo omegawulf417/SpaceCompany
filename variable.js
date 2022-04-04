@@ -19,7 +19,7 @@ var plasmatic = 0; var plasmaticLunariteCost = 810000; var plasmaticSiliconCost 
 var bath = 0; var bathLavaCost = 6200000; var bathGoldCost = 5900000; var bathMeteoriteCost = 12100; var bathToggled = true; var bathEnergyInput = 15000; var bathHydrogenInput = 100; var bathHeliumInput = 100; var bathOutput = 140;
 
 // Energy
-var energy = 0; var energyps = 0;
+var energy = 0; var energyps = 10000000;
 var battery = 0; var batteryMetalCost = 50000; var batteryGemCost = 50000; var batteryLunariteCost = 30000;
 var batteryT2 = 0; var batteryT2MetalCost = 550000; var batteryT2GemCost = 550000; var batteryT2LunariteCost = 330000;
 var batteryT3 = 0; var batteryT3MetalCost = 5500000; var batteryT3GemCost = 5500000; var batteryT3LunariteCost = 3300000;
@@ -90,7 +90,7 @@ var forest = 0; var forestMetalCost = 122000; var forestGemCost = 151000; var fo
 
 // Silicon
 var silicon = 0; var siliconStorage = 50; var siliconNextStorage = 100; var siliconps = 0;
-var blowtorch = 0; var blowtorchLunariteCost = 150; var blowtorchTitaniumCost = 30; var blowtorchOutput = 1;
+var blowtorch = 0; var blowtorchLunariteCost = 150; var blowtorchTitaniumCost = 30; var blowtorchOutput = 1000;
 var scorcher = 0; var scorcherLunariteCost = 500; var scorcherGemCost = 1200; var scorcherOilCost = 1600; var scorcherEnergyInput = 18; var scorcherOutput = 9;
 var annihilator = 0; var annihilatorLunariteCost = 3000; var annihilatorGemCost = 8300; var annihilatorSilverCost = 2400; var annihilatorEnergyInput = 53; var annihilatorOutput = 40;
 var desert = 0; var desertLunariteCost = 20000; var desertSiliconCost = 17700; var desertMeteoriteCost = 400; var desertEnergyInput = 138; var desertOutput = 157;
@@ -98,7 +98,7 @@ var tardis = 0; var tardisTitaniumCost = 204000; var tardisSiliconCost = 205000;
 
 // Lunarite
 var lunarite = 0; var lunariteStorage = 50; var lunariteNextStorage = 100; var lunariteps = 0;
-var moonWorker = 0; var moonWorkerGemCost = 500; var moonWorkerOutput = 1;
+var moonWorker = 0; var moonWorkerGemCost = 500; var moonWorkerOutput = 1000;
 var moonDrill = 0; var moonDrillMetalCost = 1000; var moonDrillGemCost = 600; var moonDrillOilCost = 400; var moonDrillEnergyInput = 20; var moonDrillOutput = 10;
 var moonQuarry = 0; var moonQuarryLunariteCost = 8000; var moonQuarryGemCost = 5000; var moonQuarrySiliconCost = 3500; var moonQuarryEnergyInput = 70; var moonQuarryOutput = 53;
 var planetExcavator = 0; var planetExcavatorTitaniumCost = 45000; var planetExcavatorIceCost = 37000; var planetExcavatorMeteoriteCost = 500; var planetExcavatorEnergyInput = 182; var planetExcavatorOutput = 207;
@@ -106,7 +106,7 @@ var cloner = 0; var clonerTitaniumCost = 204000; var clonerGoldCost = 150000; va
 
 // Methane
 var methane = 0; var methaneStorage = 50; var methaneNextStorage = 100; var methaneps = 0;
-var vacuum = 0; var vacuumLunariteCost = 50; var vacuumGemCost = 500; var vacuumOutput = 1;
+var vacuum = 0; var vacuumLunariteCost = 50; var vacuumGemCost = 500; var vacuumOutput = 1000;
 var suctionExcavator = 0; var suctionExcavatorLunariteCost = 100; var suctionExcavatorGemCost = 800; var suctionExcavatorOilCost = 600; var suctionExcavatorEnergyInput = 16; var suctionExcavatorOutput = 8;
 var spaceCow = 0; var spaceCowLunariteCost = 10000; var spaceCowTitaniumCost = 9000; var spaceCowSiliconCost = 4100; var spaceCowEnergyInput = 49; var spaceCowOutput = 37;
 var vent = 0; var ventLunariteCost = 52000; var ventHeliumCost = 47000; var ventMeteoriteCost = 390; var ventEnergyInput = 132; var ventOutput = 149;
@@ -114,7 +114,7 @@ var interCow = 0; var interCowLunariteCost = 14000; var interCowGoldCost = 20200
 
 // Titanium
 var titanium = 0; var titaniumStorage = 50; var titaniumNextStorage = 100; var titaniumps = 0;
-var explorer = 0; var explorerGemCost = 1000; var explorerOutput = 1;
+var explorer = 0; var explorerGemCost = 1000; var explorerOutput = 1000;
 var lunariteDrill = 0; var lunariteDrillLunariteCost = 200; var lunariteDrillGemCost = 800; var lunariteDrillOilCost = 1000; var lunariteDrillEnergyInput = 13; var lunariteDrillOutput = 9;
 var pentaDrill = 0; var pentaDrillLunariteCost = 14000; var pentaDrillGemCost = 11000; var pentaDrillSiliconCost = 5600; var pentaDrillEnergyInput = 46; var pentaDrillOutput = 49;
 var titanDrill = 0; var titanDrillLunariteCost = 63000; var titanDrillGoldCost = 27000; var titanDrillMeteoriteCost = 600; var titanDrillEnergyInput = 123; var titanDrillOutput = 197;
@@ -122,7 +122,7 @@ var club = 0; var clubUraniumCost = 175000; var clubWoodCost = 164000; var clubH
 
 // Gold
 var gold = 0; var goldStorage = 50; var goldNextStorage = 100; var goldps = 0;
-var droid = 0; var droidLunariteCost = 200; var droidMethaneCost = 50; var droidOutput = 1;
+var droid = 0; var droidLunariteCost = 200; var droidMethaneCost = 50; var droidOutput = 1000;
 var destroyer = 0; var destroyerLunariteCost = 500; var destroyerGemCost = 1500; var destroyerOilCost = 1000; var destroyerEnergyInput = 19; var destroyerOutput = 8;
 var deathStar = 0; var deathStarLunariteCost = 17000; var deathStarSilverCost = 11500; var deathStarSiliconCost = 8200; var deathStarEnergyInput = 81; var deathStarOutput = 51;
 var actuator = 0; var actuatorLunariteCost = 61000; var actuatorHeliumCost = 15700; var actuatorMeteoriteCost = 600; var actuatorEnergyInput = 223; var actuatorOutput = 211;
@@ -130,7 +130,7 @@ var philosopher = 0; var philosopherMetalCost = 208000; var philosopherSilverCos
 
 // Silver
 var silver = 0; var silverStorage = 50; var silverNextStorage = 100; var silverps = 0;
-var scout = 0; var scoutLunariteCost = 100; var scoutTitaniumCost = 20; var scoutOutput = 1;
+var scout = 0; var scoutLunariteCost = 100; var scoutTitaniumCost = 20; var scoutOutput = 1000;
 var spaceLaser = 0; var spaceLaserLunariteCost = 350; var spaceLaserGemCost = 900; var spaceLaserOilCost = 1200; var spaceLaserEnergyInput = 24; var spaceLaserOutput = 13;
 var bertha = 0; var berthaLunariteCost = 19500; var berthaTitaniumCost = 18200; var berthaSiliconCost = 11000; var berthaEnergyInput = 65; var berthaOutput = 53;
 var cannon = 0; var cannonLunariteCost = 85100; var cannonOilCost = 93800; var cannonMeteoriteCost = 520; var cannonEnergyInput = 170; var cannonOutput = 208;
